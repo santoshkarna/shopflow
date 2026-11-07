@@ -1,0 +1,8 @@
+server:
+  port: 9091
+
+logging:
+  level:
+    root: DEBUG                                 # default for everything
+    com.diyo.product: DEBUG             # our code shows DEBUG and above
+    org.springframework.web: INFO              # quiet the framework

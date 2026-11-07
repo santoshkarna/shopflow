@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: product-service
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/product_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+server:
+  port: 9090
+
+
+logging:
+  level:
+    root: INFO                                 # default for everything
+    com.diyo.product: DEBUG             # our code shows DEBUG and above
+    com.diyo.product.repository: TRACE  # repo package even more verbose
+    org.springframework.web: INFO              # quiet the framework
