@@ -1,22 +1,14 @@
 package com.shopflow.user.service;
 
-import com.shopflow.user.dto.UserRequest;
 import com.shopflow.user.dto.UserResponse;
-import com.shopflow.user.dto.UserUpdateRequest;
+import com.shopflow.user.model.Role;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
-    UserResponse createUser(UserRequest request);
+    Optional<UserResponse> findById(Long id);
 
-    UserResponse updateUser(Long id, UserUpdateRequest request);
-
-    void deleteUser(Long id);
-
-    UserResponse getUserById(Long id);
-
-    List<UserResponse> getAllUsers();
-
-    UserResponse getUserByUsername(String username);
+    List<UserResponse> findByRole(Role role);
 }
