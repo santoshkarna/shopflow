@@ -1,7 +1,7 @@
 package com.shopflow.user.service;
 
 import com.shopflow.user.dto.UserResponse;
-import com.shopflow.user.model.Role;
+import com.shopflow.user.domain.Role;
 import com.shopflow.user.repository.UserAccountRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

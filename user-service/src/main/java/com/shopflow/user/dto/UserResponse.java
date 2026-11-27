@@ -1,9 +1,7 @@
 package com.shopflow.user.dto;
 
-import com.shopflow.user.model.Role;
-import com.shopflow.user.model.UserAccount;
-
-import java.time.LocalDate;
+import com.shopflow.user.domain.Role;
+import com.shopflow.user.domain.UserAccount;
 
 public record UserResponse(
     Long id,

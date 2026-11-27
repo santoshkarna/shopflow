@@ -9,9 +9,15 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 server:
   port: 9091
+
+shopflow:
+  jwt:
+    issuer: shopflow-user-service
+    ttl: 15m
+    secret: jwt-secret-change-me-0123456789abcdef

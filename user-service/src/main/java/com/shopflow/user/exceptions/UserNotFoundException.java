@@ -1,5 +1,8 @@
 package com.shopflow.user.exceptions;
 
+import lombok.Getter;
+
+@Getter
 public class UserNotFoundException extends RuntimeException {
 
     private final Long userId;
